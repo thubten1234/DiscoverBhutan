@@ -45,7 +45,7 @@ function Navbar() {
     >
       <div className="container-fluid">
         <p className="navbar-brand d-none d-lg-block ms-auto">
-          Discover Bhutan
+          <img src="/image/logo.png" alt="logo" className="logo" />
         </p>
 
         <button

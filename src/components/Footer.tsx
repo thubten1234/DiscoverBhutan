@@ -26,23 +26,22 @@ function Footer() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <aside className="footer_reveal" ref={footerRef}>
       <img
-        src="/image/footer.png"
+        src="/image/logo.png"
         alt="Footer Banner"
         className="footer_reveal-image"
+        loading="lazy"
       />
 
-      {/* Footer content */}
       <footer className="footer">
         <Container>
           <Row>
+            {/* About Us Section */}
             <Col xs={12} md={4} className="footer-column">
               <h5>About Us</h5>
               <p>
@@ -52,6 +51,7 @@ function Footer() {
               </p>
             </Col>
 
+            {/* Contact Section */}
             <Col xs={12} md={4} className="footer-column">
               <h5>Contact</h5>
               <ul>
@@ -61,16 +61,17 @@ function Footer() {
               </ul>
             </Col>
 
+            {/* Social Media Section */}
             <Col xs={12} md={4} className="footer-column">
               <h5>Follow Us</h5>
               <div className="social-links">
                 <ul>
                   <li>
-                    {" "}
                     <a
                       href="https://facebook.com"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Facebook"
                     >
                       Facebook
                     </a>
@@ -80,16 +81,17 @@ function Footer() {
                       href="https://twitter.com"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Twitter"
                     >
                       Twitter
                     </a>
                   </li>
                   <li>
-                    {" "}
                     <a
                       href="https://instagram.com"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Instagram"
                     >
                       Instagram
                     </a>
@@ -100,11 +102,12 @@ function Footer() {
           </Row>
         </Container>
 
+        {/* Footer Bottom Section */}
         <div className="footer-bottom">
           <Container>
             <p className="text-center">
-              &copy; {new Date().getFullYear()} Bhutan Travel. All Rights
-              Reserved.
+              &copy;{" "}
+              {`${new Date().getFullYear()} Bhutan Travel. All Rights Reserved.`}
             </p>
           </Container>
         </div>

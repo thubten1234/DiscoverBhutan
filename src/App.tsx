@@ -8,6 +8,12 @@ import Punakha from "./pages/explore/Punakha.tsx";
 import Thimphu from "./pages/explore/Thimphu.tsx";
 import Paro from "./pages/explore/Paro.tsx";
 import Bumthang from "./pages/explore/Bumthang.tsx";
+import Trongsa from "./pages/explore/Trongsa.tsx";
+import Wangdue from "./pages/explore/Wangdue.tsx";
+import Tashiyangtse from "./pages/explore/Tashiyangtse.tsx";
+import Chukha from "./pages/explore/Chukha.tsx";
+import Mongar from "./pages/explore/Mongar.tsx";
+import Tashigang from "./pages/explore/Trashigang.tsx";
 function App() {
   return (
     <div>
@@ -21,6 +27,12 @@ function App() {
           <Route path="/explore/thimphu" element={<Thimphu />} />
           <Route path="/explore/paro" element={<Paro />} />
           <Route path="/explore/bumthang" element={<Bumthang />} />
+          <Route path="/explore/trongsa" element={<Trongsa />} />
+          <Route path="/explore/wangdue" element={<Wangdue />} />
+          <Route path="/explore/tashiyangtse" element={<Tashiyangtse />} />
+          <Route path="/explore/chukha" element={<Chukha />} />
+          <Route path="/explore/mongar" element={<Mongar />} />
+          <Route path="/explore/trashigang" element={<Tashigang />} />
           <Route path="*" element={<h1>404 - Page Not Found</h1>} />
         </Routes>
       </Router>

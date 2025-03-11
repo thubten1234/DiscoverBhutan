@@ -6,14 +6,18 @@ const Thimphu = () => {
   return (
     <>
       <Navbar />
+      {/* Banner Section */}
       <div className="intro-banner">
         <img
           src="../image/thimphu.jpg"
           className="explore-banner-image"
-          alt="intro-banner"
+          alt="Thimphu Valley Banner"
+          loading="lazy"
         />
         <h1 className="intro-banner-title">Thimphu</h1>
       </div>
+
+      {/* Main Content Section */}
       <div className="content-container">
         <div className="main-content">
           <h2>About Thimphu</h2>
@@ -25,32 +29,45 @@ const Thimphu = () => {
 
           <h3>Highlights</h3>
           <ul>
-            <li>Visit Tashichho Dzong, the seat of Bhutan's government.</li>
             <li>
-              Marvel at the serene Semtokha Dzong, Bhutan's oldest fortress.
+              Visit <strong>Tashichho Dzong</strong>, the seat of Bhutan's
+              government.
             </li>
             <li>
-              Admire the giant Buddha Dordenma statue overlooking the valley.
-            </li>
-            <li>Pay homage at the Memorial Stupa.</li>
-            <li>
-              Visit Motithang Takin Preserve to see Bhutan's national animal.
+              Marvel at the serene <strong>Semtokha Dzong</strong>, Bhutan's
+              oldest fortress.
             </li>
             <li>
-              Experience the sacred Tandin Nye, a hidden gem of spirituality.
+              Admire the giant <strong>Buddha Dordenma</strong> statue
+              overlooking the valley.
             </li>
             <li>
-              Discover Bhutanese art at the National Institute of Arts & Crafts.
+              Pay homage at the <strong>Memorial Stupa</strong>.
             </li>
-            <li>Take in stunning views at Dochula Pass and Lamperi Park.</li>
+            <li>
+              Visit <strong>Motithang Takin Preserve</strong> to see Bhutan's
+              national animal.
+            </li>
+            <li>
+              Experience the sacred <strong>Tandin Nye</strong>, a hidden gem of
+              spirituality.
+            </li>
+            <li>
+              Discover Bhutanese art at the{" "}
+              <strong>National Institute of Arts & Crafts</strong>.
+            </li>
+            <li>
+              Take in stunning views at <strong>Dochula Pass</strong> and{" "}
+              <strong>Lamperi Park</strong>.
+            </li>
             <li>Explore the bustling streets and markets of Thimphu.</li>
           </ul>
 
           <h3>How to Get There</h3>
           <p>
-            Thimphu is about an hour's drive from Paro, where Bhutan's only
-            international airport is located. The journey offers scenic views of
-            terraced fields, villages, and mountains.
+            Thimphu is about an hour's drive from <strong>Paro</strong>, where
+            Bhutan's only international airport is located. The journey offers
+            scenic views of terraced fields, villages, and mountains.
           </p>
         </div>
 
@@ -73,7 +90,7 @@ const Thimphu = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Thimphu Map"
+              title="Thimphu Valley Map"
             ></iframe>
           </div>
 
@@ -105,11 +122,16 @@ const Thimphu = () => {
       <div className="gallery">
         <h2>Gallery</h2>
         <div className="gallery-grid">
-          <img src="/image/thimphu.jpg" alt="Thimphu 1" />
-          <img src="/image/thimphu1.jpg" alt="Thimphu 2" />
-          <img src="/image/thimphu2.jpg" alt="Thimphu 3" />
+          <img src="/image/thimphu.jpg" alt="Tashichho Dzong" loading="lazy" />
+          <img
+            src="/image/thimphu1.jpg"
+            alt="Buddha Dordenma Statue"
+            loading="lazy"
+          />
+          <img src="/image/thimphu2.jpg" alt="Thimphu Streets" loading="lazy" />
         </div>
       </div>
+
       <Footer />
     </>
   );

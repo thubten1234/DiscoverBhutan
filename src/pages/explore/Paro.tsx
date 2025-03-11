@@ -6,14 +6,18 @@ const Paro = () => {
   return (
     <>
       <Navbar />
+      {/* Banner Section */}
       <div className="intro-banner">
         <img
           src="../image/paro.webp"
           className="explore-banner-image"
-          alt="intro-banner"
+          alt="Paro Valley Banner"
+          loading="lazy"
         />
         <h1 className="intro-banner-title">Paro</h1>
       </div>
+
+      {/* Main Content Section */}
       <div className="content-container">
         <div className="main-content">
           <h2>About Paro</h2>
@@ -27,27 +31,46 @@ const Paro = () => {
           <h3>Highlights</h3>
           <ul>
             <li>
-              Visit the sacred Tiger’s Nest Monastery (Taktsang Lhakhang).
-            </li>
-            <li>Discover Kyichu Lhakhang, one of Bhutan’s oldest temples.</li>
-            <li>Explore the ruins of Drugyal Dzong, a historic fortress.</li>
-            <li>Admire the unique architecture of Dungtse Lhakhang.</li>
-            <li>Visit Ta Dzong, home to the National Museum of Bhutan.</li>
-            <li>Walk across the suspension bridge near Tachog Lhakang.</li>
-            <li>
-              Experience the serenity of Dra Karpo, a sacred meditation site.
+              Visit the sacred{" "}
+              <strong>Tiger’s Nest Monastery (Taktsang Lhakhang)</strong>.
             </li>
             <li>
-              Marvel at the grandeur of Rinpung Dzong, overlooking the valley.
+              Discover <strong>Kyichu Lhakhang</strong>, one of Bhutan’s oldest
+              temples.
+            </li>
+            <li>
+              Explore the ruins of <strong>Drugyal Dzong</strong>, a historic
+              fortress.
+            </li>
+            <li>
+              Admire the unique architecture of{" "}
+              <strong>Dungtse Lhakhang</strong>.
+            </li>
+            <li>
+              Visit <strong>Ta Dzong</strong>, home to the National Museum of
+              Bhutan.
+            </li>
+            <li>
+              Walk across the suspension bridge near{" "}
+              <strong>Tachog Lhakang</strong>.
+            </li>
+            <li>
+              Experience the serenity of <strong>Dra Karpo</strong>, a sacred
+              meditation site.
+            </li>
+            <li>
+              Marvel at the grandeur of <strong>Rinpung Dzong</strong>,
+              overlooking the valley.
             </li>
           </ul>
 
           <h3>How to Get There</h3>
           <p>
             Paro is the site of Bhutan's only international airport and is well
-            connected by road to other major towns such as Thimphu and Punakha.
-            The journey to Paro offers stunning views of terraced fields and
-            traditional Bhutanese homes.
+            connected by road to other major towns such as{" "}
+            <strong>Thimphu</strong> and <strong>Punakha</strong>. The journey
+            to Paro offers stunning views of terraced fields and traditional
+            Bhutanese homes.
           </p>
         </div>
 
@@ -70,7 +93,7 @@ const Paro = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Paro Map"
+              title="Paro Valley Map"
             ></iframe>
           </div>
 
@@ -102,11 +125,20 @@ const Paro = () => {
       <div className="gallery">
         <h2>Gallery</h2>
         <div className="gallery-grid">
-          <img src="/image/paro.jpg" alt="Paro 1" />
-          <img src="/image/paro1.jpg" alt="Paro 2" />
-          <img src="/image/paro2.jpg" alt="Paro 3" />
+          <img
+            src="/image/paro.jpg"
+            alt="Tiger’s Nest Monastery"
+            loading="lazy"
+          />
+          <img
+            src="/image/paro1.jpg"
+            alt="Paro Valley Landscape"
+            loading="lazy"
+          />
+          <img src="/image/paro2.jpg" alt="Rinpung Dzong" loading="lazy" />
         </div>
       </div>
+
       <Footer />
     </>
   );
