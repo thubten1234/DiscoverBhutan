@@ -56,7 +56,7 @@ function Footer() {
               <h5>Contact</h5>
               <ul>
                 <li>Email: discoverbhutanholidays@gmail.com</li>
-                <li>Phone: +97517727077</li>
+                <li>Phone(Whatsapp): +97517727077</li>
                 <li>Address: Thimphu, Bhutan</li>
               </ul>
             </Col>

@@ -1,3 +1,4 @@
+import { useInView } from "react-intersection-observer";
 import "../App.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -6,6 +7,17 @@ import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
 function Home() {
+  // Configure animations for each image
+  const [leftImageRef, leftImageInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.25,
+  });
+
+  const [rightImageRef, rightImageInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.25,
+  });
+
   return (
     <>
       <Navbar />
@@ -23,15 +35,19 @@ function Home() {
           </h6>
         </Container>
       </div>
+
       <div className="intro-01">
-        {/*Culture & Cuisine Section*/}
+        {/* Culture & Cuisine Section */}
         <div className="container my-1">
           <div className="d-flex flex-column flex-md-row align-items-center">
             <div className="image-container flex-shrink-0 mb-4 mb-md-0">
               <img
+                ref={leftImageRef}
                 src="/image/spacer-div-001.png"
                 alt="Description"
-                className="custom-img-size"
+                className={`custom-img-size ${
+                  leftImageInView ? "slide-in-left" : ""
+                }`}
               />
             </div>
 
@@ -50,30 +66,32 @@ function Home() {
             </div>
           </div>
         </div>
-        <div>
-          {/*Religion Section*/}
-          <div className="container my-1">
-            <div className="d-flex flex-column flex-md-row-reverse align-items-center">
-              <div className="image-container flex-shrink-0 mb-4 mb-md-0">
-                <img
-                  src="/image/spacer-div-002.png"
-                  alt="Description"
-                  className="custom-img-size"
-                />
-              </div>
-              <div className="text-container ms-md-4">
-                <h1>Experience Bhutan's Spiritual Heritage</h1>
-                <p className="lead">
-                  <strong>
-                    Immerse yourself in Bhutan’s profound spiritual traditions
-                    and explore its sacred sites. Witness vibrant religious
-                    festivals, visit ancient monasteries like Tiger’s Nest and
-                    Punakha Dzong, and connect with the peaceful practices of
-                    Buddhism. Discover the harmony of faith, culture, and
-                    heritage in every serene moment of your journey.
-                  </strong>
-                </p>
-              </div>
+
+        {/* Religion Section */}
+        <div className="container my-1">
+          <div className="d-flex flex-column flex-md-row-reverse align-items-center">
+            <div className="image-container flex-shrink-0 mb-4 mb-md-0">
+              <img
+                ref={rightImageRef}
+                src="/image/spacer-div-002.png"
+                alt="Description"
+                className={`custom-img-size ${
+                  rightImageInView ? "slide-in-right" : ""
+                }`}
+              />
+            </div>
+            <div className="text-container ms-md-4">
+              <h1>Experience Bhutan's Spiritual Heritage</h1>
+              <p className="lead">
+                <strong>
+                  Immerse yourself in Bhutan’s profound spiritual traditions and
+                  explore its sacred sites. Witness vibrant religious festivals,
+                  visit ancient monasteries like Tiger’s Nest and Punakha Dzong,
+                  and connect with the peaceful practices of Buddhism. Discover
+                  the harmony of faith, culture, and heritage in every serene
+                  moment of your journey.
+                </strong>
+              </p>
             </div>
           </div>
         </div>
@@ -126,7 +144,6 @@ function Home() {
           </div>
         </div>
       </div>
-
       <Footer />
     </>
   );
