@@ -9,7 +9,7 @@ const Mongar = () => {
       {/* Banner Section */}
       <div className="intro-banner">
         <img
-          src="../image/mongar.jpg"
+          src="../image/Mongar.jpg"
           className="explore-banner-image"
           alt="Mongar Valley Banner"
           loading="lazy"
@@ -110,13 +110,13 @@ const Mongar = () => {
       <div className="gallery">
         <h2>Gallery</h2>
         <div className="gallery-grid">
-          <img src="/image/mongar.jpg" alt="Mongar Dzong" loading="lazy" />
+          <img src="/image/mongar1.jpg" alt="Mongar Dzong" loading="lazy" />
           <img
-            src="/image/mongar1.jpg"
+            src="/image/mongar2.jpg"
             alt="Drametse Monastery"
             loading="lazy"
           />
-          <img src="/image/mongar2.jpg" alt="Kuri Chhu River" loading="lazy" />
+          <img src="/image/mongar3.jpg" alt="Kuri Chhu River" loading="lazy" />
         </div>
       </div>
 

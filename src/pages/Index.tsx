@@ -7,13 +7,18 @@ import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
 function Home() {
-  // Configure animations for each image
+  // Existing left/right image animations
   const [leftImageRef, leftImageInView] = useInView({
     triggerOnce: true,
     threshold: 0.25,
   });
-
   const [rightImageRef, rightImageInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.25,
+  });
+
+  // New animation for info div
+  const [infoRef, infoInView] = useInView({
     triggerOnce: true,
     threshold: 0.25,
   });
@@ -98,13 +103,16 @@ function Home() {
       </div>
 
       {/*Background Info */}
-      <div className="info">
+      <div
+        ref={infoRef}
+        className={`info ${infoInView ? "slide-in-bottom in-view" : ""}`}
+      >
         <img
           src="/image/background-01.webp"
           alt="background-div-01"
-          className="bgimg-01 "
+          className="bgimg-01"
         />
-        <div className="Description-01 position-absolute translate-right  text-center text-white">
+        <div className="Description-01 position-absolute translate-right text-center text-white">
           <Container>
             <h3 className="heading-responsive display-4 display-sm-5 display-md-6 display-lg-7">
               Experience the Magic of Bhutan

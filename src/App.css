@@ -678,6 +678,7 @@ textarea {
   background-color: rgba(0, 0, 0, 0.387);
   padding: 5px;
 }
+
 /*explore page*/
 .explore-banner-image {
   width: 100%;
@@ -779,7 +780,6 @@ textarea {
   border: 0;
 }
 
-/* Responsive styles for small screens */
 @media screen and (max-width: 768px) {
   .content-container {
     flex-direction: column;
@@ -835,8 +835,6 @@ textarea {
   font-weight: bold;
 }
 
-/* App.css */
-/* Slide-in animations */
 .slide-in-left {
   animation: slideInLeft 1.7s ease-out forwards;
   opacity: 0;
@@ -850,7 +848,7 @@ textarea {
 @keyframes slideInLeft {
   from {
     transform: translateX(-100%);
-    opacity: 1;
+    opacity: 0;
   }
   to {
     transform: translateX(0);
@@ -861,10 +859,33 @@ textarea {
 @keyframes slideInRight {
   from {
     transform: translateX(100%);
-    opacity: 1;
+    opacity: 0;
   }
   to {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-bottom {
+  animation: slideInBottom 1.5s ease-out forwards;
+}
+
+.info {
+  opacity: 0;
+}
+
+.info.in-view {
+  opacity: 1;
 }

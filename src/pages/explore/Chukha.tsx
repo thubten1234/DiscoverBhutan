@@ -9,7 +9,7 @@ const Chukha = () => {
       {/* Banner Section */}
       <div className="intro-banner">
         <img
-          src="../image/chukha.jpg"
+          src="../image/Chukha.jpg"
           className="explore-banner-image"
           alt="Chukha Valley Banner"
           loading="lazy"
@@ -109,13 +109,9 @@ const Chukha = () => {
       <div className="gallery">
         <h2>Gallery</h2>
         <div className="gallery-grid">
-          <img
-            src="/image/chukha.jpg"
-            alt="Chukha Hydropower Plant"
-            loading="lazy"
-          />
-          <img src="/image/chukha1.jpg" alt="Tala Waterfall" loading="lazy" />
-          <img src="/image/chukha2.jpg" alt="Wangchhu River" loading="lazy" />
+          <img src="/image/chukha1.jpg" alt="" loading="lazy" />
+          <img src="/image/chukha2.jpg" alt="" loading="lazy" />
+          <img src="/image/chukha3.jpg" alt="" loading="lazy" />
         </div>
       </div>
 

@@ -9,7 +9,7 @@ const Tashiyangtse = () => {
       {/* Banner Section */}
       <div className="intro-banner">
         <img
-          src="../image/tashiyangtse.jpg"
+          src="../image/Trashiyangtse.jpg"
           className="explore-banner-image"
           alt="Tashiyangtse Valley Banner"
           loading="lazy"
@@ -110,21 +110,9 @@ const Tashiyangtse = () => {
       <div className="gallery">
         <h2>Gallery</h2>
         <div className="gallery-grid">
-          <img
-            src="/image/tashiyangtse.jpg"
-            alt="Chorten Kora"
-            loading="lazy"
-          />
-          <img
-            src="/image/tashiyangtse1.jpg"
-            alt="Bomdeling Wildlife Sanctuary"
-            loading="lazy"
-          />
-          <img
-            src="/image/tashiyangtse2.jpg"
-            alt="Kholongchu River"
-            loading="lazy"
-          />
+          <img src="/image/tashiyangtse1.jpg" alt="" loading="lazy" />
+          <img src="/image/tashiyangtse2.jpg" alt="" loading="lazy" />
+          <img src="/image/tashiyangtse3.jpg" alt="" loading="lazy" />
         </div>
       </div>
 

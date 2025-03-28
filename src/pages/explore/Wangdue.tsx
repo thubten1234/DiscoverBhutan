@@ -9,7 +9,7 @@ const Wangdue = () => {
       {/* Banner Section */}
       <div className="intro-banner">
         <img
-          src="../image/wangdi.jpg"
+          src="../image/Wangdue.jpg"
           className="explore-banner-image"
           alt="Wangdi Valley Banner"
           loading="lazy"
@@ -111,13 +111,17 @@ const Wangdue = () => {
         <h2>Gallery</h2>
         <div className="gallery-grid">
           <img
-            src="/image/wangdi.jpg"
+            src="/image/wangdue1.jpg"
             alt="Wangdue Phodrang Dzong"
             loading="lazy"
           />
-          <img src="/image/wangdi1.jpg" alt="Phobjikha Valley" loading="lazy" />
           <img
-            src="/image/wangdi2.jpg"
+            src="/image/wangdue2.jpg"
+            alt="Phobjikha Valley"
+            loading="lazy"
+          />
+          <img
+            src="/image/wangdue3.jpg"
             alt="Gangtey Monastery"
             loading="lazy"
           />

@@ -65,7 +65,7 @@ const Explore = () => {
       title: "Trashigang",
       description: "",
       link: "/explore/trashigang",
-      image: "./image/trashigang.webp",
+      image: "./image/Tashigang.webp",
     },
   ];
 

@@ -9,7 +9,7 @@ const Tashigang = () => {
       {/* Banner Section */}
       <div className="intro-banner">
         <img
-          src="/image/tashigang.jpg"
+          src="/image/Tashigang.jpg"
           className="explore-banner-image"
           alt="Tashigang Valley Banner"
           loading="lazy"
@@ -111,21 +111,9 @@ const Tashigang = () => {
       <div className="gallery">
         <h2>Gallery</h2>
         <div className="gallery-grid">
-          <img
-            src="/image/trashigang.jpg"
-            alt="Tashigang Dzong"
-            loading="lazy"
-          />
-          <img
-            src="/image/tashigang1.jpg"
-            alt="Gom Kora Temple"
-            loading="lazy"
-          />
-          <img
-            src="/image/trashigang2.jpg"
-            alt="Radhi Village"
-            loading="lazy"
-          />
+          <img src="/image/tashigang1.jpg" alt="" loading="lazy" />
+          <img src="/image/tashigang2.jpg" alt="" loading="lazy" />
+          <img src="/image/tashigang3.jpg" alt="" loading="lazy" />
         </div>
       </div>
 
