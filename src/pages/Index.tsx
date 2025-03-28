@@ -36,7 +36,7 @@ function Home() {
             DISCOVER BHUTAN
           </h1>
           <h6 className="lead">
-            A Land of Mystical Beauty, Timeless Traditions, and Adventures.
+            A Land of Mystical Beauty, Timeless Traditions, and Adventures
           </h6>
         </Container>
       </div>
