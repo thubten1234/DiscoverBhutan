@@ -869,7 +869,7 @@ textarea {
 
 @keyframes slideInBottom {
   from {
-    transform: translateY(100%);
+    transform: translateY(30%);
     opacity: 0;
   }
   to {
@@ -879,7 +879,7 @@ textarea {
 }
 
 .slide-in-bottom {
-  animation: slideInBottom 1.5s ease-out forwards;
+  animation: slideInBottom 2s ease-out forwards;
 }
 
 .info {
