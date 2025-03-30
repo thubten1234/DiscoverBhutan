@@ -359,7 +359,7 @@ body {
 }
 .footer_reveal {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   height: 80vh;
   display: flex;
   align-items: flex-end;
@@ -501,6 +501,8 @@ body {
 @media (max-width: 768px) {
   .aboutus-banner img {
     margin: 0;
+    padding-top: 24%;
+    margin-top: 20%;
   }
   .aboutus-banner-content {
     position: relative;
@@ -515,6 +517,7 @@ body {
   .aboutus-banner-overlay {
     width: 100%;
     top: 80%;
+
     transform: translate(-50%, -190%);
   }
   .aboutus-banner-content h2 {
@@ -530,8 +533,8 @@ body {
 
 .aboutus-extra {
   background-color: #799aad;
-  padding: 50px;
-  padding-top: 23%;
+  padding: 50px !important;
+  padding-top: 23% !important;
   text-align: center;
 }
 
@@ -569,16 +572,16 @@ body {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .aboutus-banner-content h2 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   .aboutus-banner-overlay {
     padding: 15px;
-    margin-top: -14%;
+    top: 55%;
     height: 80%;
   }
   .aboutus-extra {
     padding: 65px;
-    margin-top: 20%;
+    margin-top: 35%;
   }
   .extra-grid {
     flex-direction: column;
@@ -587,13 +590,16 @@ body {
   .mycontainer {
     display: flex;
     flex-direction: column;
+    margin: 0 !important;
   }
   .contact-div {
     height: 70vh;
-    margin: -25%;
+    margin-bottom: 10%;
+    margin-top: auto;
+    max-width: 100%;
   }
   .contact-div img {
-    margin-top: 43%;
+    margin-top: 38%;
   }
   .mycontainer label {
     text-align: left !important;
@@ -613,29 +619,21 @@ body {
   height: 138vh;
   position: relative;
   padding-top: 20%;
+  max-width: 100%;
 }
 .contact-div img {
-  background-repeat: no-repeat;
-  background-size: cover;
   object-fit: cover;
-  background-position: center;
+  max-width: 100%;
   width: 100%;
   height: 100vh;
 }
 .contact-form-outer {
-  position: absolute;
-  top: 40%;
-  left: 20%;
-  right: 0;
-  padding: 10px;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  bottom: 75%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 60vh;
-  width: 60%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  height: auto;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -788,7 +786,9 @@ textarea {
     width: 100%;
     margin-left: 0rem;
   }
-
+  .contact-form-outer {
+    bottom: 60%;
+  }
   .main-content {
     flex: 1;
     max-width: 100%;
@@ -805,6 +805,9 @@ textarea {
   }
   .gallery-grid img {
     height: 300px;
+  }
+  .contact-form-right {
+    text-align: left;
   }
 }
 
