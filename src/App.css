@@ -359,8 +359,8 @@ body {
 }
 .footer_reveal {
   position: relative;
-  overflow: visible;
-  height: 80vh;
+  overflow: hidden;
+  height: 70vh;
   display: flex;
   align-items: flex-end;
 }
