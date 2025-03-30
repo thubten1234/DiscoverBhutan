@@ -474,6 +474,7 @@ body {
   max-width: 100%;
   height: 70%;
   text-align: center;
+  display: grid;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -230%);
@@ -482,7 +483,7 @@ body {
 }
 .aboutus-banner {
   height: 100vh;
-  padding-top: 20%;
+  padding-top: 19%;
 }
 
 .aboutus-banner-content h2 {
@@ -516,8 +517,7 @@ body {
   }
   .aboutus-banner-overlay {
     width: 100%;
-    top: 80%;
-
+    top: 80% !important;
     transform: translate(-50%, -190%);
   }
   .aboutus-banner-content h2 {
@@ -577,7 +577,7 @@ body {
   .aboutus-banner-overlay {
     padding: 15px;
     top: 55%;
-    height: 80%;
+    height: 90%;
   }
   .aboutus-extra {
     padding: 65px;
