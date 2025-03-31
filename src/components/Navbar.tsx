@@ -101,6 +101,15 @@ function Navbar() {
                 Contact
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                to="/gallery"
+                className="nav-link"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                Gallery
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

@@ -4,6 +4,7 @@ import Home from "./pages/Index.tsx";
 import Explore from "./pages/Explore.tsx";
 import Aboutus from "./pages/Aboutus.tsx";
 import Contactus from "./pages/Contactus.tsx";
+import Gallery from "./pages/Gallery.tsx";
 import Punakha from "./pages/explore/Punakha.tsx";
 import Thimphu from "./pages/explore/Thimphu.tsx";
 import Paro from "./pages/explore/Paro.tsx";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/explore" element={<Explore />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/contactus" element={<Contactus />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/explore/punakha" element={<Punakha />} />
           <Route path="/explore/thimphu" element={<Thimphu />} />
           <Route path="/explore/paro" element={<Paro />} />

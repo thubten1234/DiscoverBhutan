@@ -2,7 +2,7 @@ import { useInView } from "react-intersection-observer";
 import "../App.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Gallery from "../components/Gallery";
+import Gallery from "../components/Carousel";
 import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
