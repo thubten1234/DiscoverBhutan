@@ -919,13 +919,15 @@ textarea {
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 2rem;
+  z-index: 99;
+  position: relative;
 }
 
 .gallery-filters button {
   padding: 0.5rem 1.5rem;
   border: 1px solid #ddd;
   background: white;
-
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s;
 }
