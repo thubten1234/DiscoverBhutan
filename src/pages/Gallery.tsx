@@ -169,15 +169,15 @@ export default function Gallery() {
         </div>
 
         {/* Image Grid */}
-        <div className="gallery-grid">
+        <div className="gallery-grid-main">
           {filteredImages.map((image, index) => (
             <div
               key={image.id}
-              className="gallery-item"
+              className="gallery-item-main"
               onClick={() => openLightbox(index)}
             >
               <img src={image.src} alt={image.alt} loading="lazy" />
-              <div className="image-overlay">
+              <div className="image-overlay1">
                 <span>{image.alt}</span>
               </div>
             </div>
