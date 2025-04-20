@@ -88,6 +88,18 @@ const galleryImages = [
     alt: "",
     category: "adventure",
   },
+  {
+    id: 15,
+    src: "/gallery/16.jpg",
+    alt: "",
+    category: "adventure",
+  },
+  {
+    id: 16,
+    src: "/gallery/17.jpg",
+    alt: "",
+    category: "culture",
+  },
 ];
 
 export default function Gallery() {

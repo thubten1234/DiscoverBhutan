@@ -14,13 +14,13 @@ const Wangdue = () => {
           alt="Wangdi Valley Banner"
           loading="lazy"
         />
-        <h1 className="intro-banner-title">Wangdi</h1>
+        <h1 className="intro-banner-title">Wangdue</h1>
       </div>
 
       {/* Main Content Section */}
       <div className="content-container">
         <div className="main-content">
-          <h2>About Wangdi</h2>
+          <h2>About Wangdue Phodrang</h2>
           <p>
             Wangdi, also known as Wangdue Phodrang, is a serene district in
             Bhutan known for its lush valleys, historic fortresses, and rich

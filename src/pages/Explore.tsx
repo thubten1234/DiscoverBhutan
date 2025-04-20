@@ -8,7 +8,7 @@ const Explore = () => {
   const items = [
     {
       title: "Punakha",
-      description: "Discover the beauty of Punakha.",
+      description: "",
       link: "/explore/punakha",
       image: "./image/punakha.webp",
     },
