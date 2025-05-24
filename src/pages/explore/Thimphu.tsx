@@ -1,7 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import { Link } from "react-router-dom";
-
+import RelatedDestinations from "../../components/RelatedDestinations";
 const Thimphu = () => {
   return (
     <>
@@ -9,7 +8,7 @@ const Thimphu = () => {
       {/* Banner Section */}
       <div className="intro-banner">
         <img
-          src="../image/thimphu.jpg"
+          src="../image/thimphu.png"
           className="explore-banner-image"
           alt="Thimphu Valley Banner"
           loading="lazy"
@@ -95,26 +94,7 @@ const Thimphu = () => {
           </div>
 
           <h3>Related Destinations</h3>
-          <ul>
-            <li>
-              <Link to="/explore/paro" onClick={() => window.scrollTo(0, 0)}>
-                Paro
-              </Link>
-            </li>
-            <li>
-              <Link to="/explore/punakha" onClick={() => window.scrollTo(0, 0)}>
-                Punakha
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/explore/bumthang"
-                onClick={() => window.scrollTo(0, 0)}
-              >
-                Bumthang
-              </Link>
-            </li>
-          </ul>
+          <RelatedDestinations currentPage="Thimphu" />
         </aside>
       </div>
 

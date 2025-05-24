@@ -16,7 +16,7 @@ const Explore = () => {
       title: "Thimphu",
       description: "",
       link: "/explore/thimphu",
-      image: "./image/thimphu.webp",
+      image: "./image/thimphu.png",
     },
     {
       title: "Paro",

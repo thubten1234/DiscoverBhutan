@@ -15,6 +15,7 @@ import Tashiyangtse from "./pages/explore/Tashiyangtse.tsx";
 import Chukha from "./pages/explore/Chukha.tsx";
 import Mongar from "./pages/explore/Mongar.tsx";
 import Tashigang from "./pages/explore/Trashigang.tsx";
+// Removed unused import for RelatedDestinations
 function App() {
   return (
     <div>

@@ -100,6 +100,48 @@ const galleryImages = [
     alt: "",
     category: "culture",
   },
+  {
+    id: 17,
+    src: "/gallery/18.jpg",
+    alt: "",
+    category: "landscape",
+  },
+  {
+    id: 18,
+    src: "/gallery/19.jpg",
+    alt: "",
+    category: "adventure",
+  },
+  {
+    id: 19,
+    src: "/gallery/20.jpg",
+    alt: "",
+    category: "landscape",
+  },
+  {
+    id: 20,
+    src: "/gallery/21.jpg",
+    alt: "",
+    category: "culture",
+  },
+  {
+    id: 21,
+    src: "/gallery/22.jpg",
+    alt: "",
+    category: "festival",
+  },
+  {
+    id: 22,
+    src: "/gallery/23.jpg",
+    alt: "",
+    category: "festival",
+  },
+  {
+    id: 23,
+    src: "/gallery/24.jpg",
+    alt: "",
+    category: "festival",
+  },
 ];
 
 export default function Gallery() {

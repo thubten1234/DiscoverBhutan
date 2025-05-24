@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import { Link } from "react-router-dom";
+import RelatedDestinations from "../../components/RelatedDestinations";
 
 const Bumthang = () => {
   return (
@@ -83,23 +83,7 @@ const Bumthang = () => {
           </div>
 
           <h3>Related Destinations</h3>
-          <ul>
-            <li>
-              <Link to="/explore/punakha" onClick={() => window.scrollTo(0, 0)}>
-                Punakha
-              </Link>
-            </li>
-            <li>
-              <Link to="/explore/thimphu" onClick={() => window.scrollTo(0, 0)}>
-                Thimphu
-              </Link>
-            </li>
-            <li>
-              <Link to="/explore/paro" onClick={() => window.scrollTo(0, 0)}>
-                Paro
-              </Link>
-            </li>
-          </ul>
+          <RelatedDestinations currentPage="Bumthang" />
         </aside>
       </div>
 

@@ -1,7 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import { Link } from "react-router-dom";
-
+import RelatedDestinations from "../../components/RelatedDestinations";
 const Tashigang = () => {
   return (
     <>
@@ -84,26 +83,7 @@ const Tashigang = () => {
           </div>
 
           <h3>Related Destinations</h3>
-          <ul>
-            <li>
-              <Link to="/explore/thimphu" onClick={() => window.scrollTo(0, 0)}>
-                Thimphu
-              </Link>
-            </li>
-            <li>
-              <Link to="/explore/punakha" onClick={() => window.scrollTo(0, 0)}>
-                Punakha
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/explore/bumthang"
-                onClick={() => window.scrollTo(0, 0)}
-              >
-                Bumthang
-              </Link>
-            </li>
-          </ul>
+          <RelatedDestinations currentPage="Trashigang" />
         </aside>
       </div>
 
